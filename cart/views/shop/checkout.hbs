@@ -2,8 +2,8 @@
     <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
         <h1><center>Checkout</center></h1>
         <h4><center>Your Total: ${{total}}</center></h4>
-        
-        <div id="charge-error" class="alert alert-danger hidden">
+
+        <div id="charge-error" class="alert alert-danger {{#if noError}}hidden{{/if}}">
             {{errMsg}}
         </div>
 
